@@ -12,6 +12,7 @@
   <body>
     
     <% if user_signed_in? %>
+      <br><br><br>
       <%= render "partials/flash" if flash %>
       <%= render 'layouts/nav' %>
     <% end %>

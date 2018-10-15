@@ -12,7 +12,7 @@ class PagesController < ApplicationController
 
     def member
         @user = current_user
-        authorize! :read, @user, message: "Unauthorized User"
+        authorize! :member, @user, message: "Unauthorized User"
     end
 
     def invite

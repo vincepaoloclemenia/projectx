@@ -1,9 +1,9 @@
 RailsAdmin.config do |config|
 
   ### Popular gems integration
-  config.authorize_with do
-    redirect_to main_app.root_path unless current_user.super_admin?
-  end
+  #config.authorize_with do
+  #  redirect_to main_app.root_path unless current_user.super_admin?
+  #end
   ## == Devise ==
   # config.authenticate_with do
   #   warden.authenticate! scope: :user
@@ -11,8 +11,9 @@ RailsAdmin.config do |config|
   config.current_user_method(&:current_user)
 
   ## == Cancan ==
-  #config.authorize_with :cancan
-
+  config.authorize_with :cancancan
+  
+  config.parent_controller = 'ApplicationController' 
   ## == Pundit ==
   # config.authorize_with :pundit
 
