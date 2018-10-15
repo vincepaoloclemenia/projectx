@@ -1,0 +1,64 @@
+.navbar {
+//	height: 75px;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    //text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-collapse {
+    background-color: #002435;
+}
+
+.navbar-default {
+    background-color: #002435;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    .navbar-toggle {
+        background-color: #002435;
+    }
+
+    .navbar-nav > li > a {
+        color: #ffff;
+        &:hover {
+            color: lighten(#002435, 35%);
+            background-color: transparent;
+            transition: 0.5s;
+        }
+    }
+    
+    .navbar-header {
+
+        .navbar-brand {
+            vertical-align: middle;
+            color: #ffff;
+            letter-spacing: 1.4px;
+            font-weight: 500;
+        }
+
+    }
+
+    .dropdown-menu > li:hover {
+        background-color: lighten(#002435, 35%);
+        color: #002435;
+    }
+
+    .dropdown-menu{
+        background-color: lighten(#002435, 35%);
+        color: #ffff;
+        border: none;
+        li a:hover{
+            background-color: lighten(#002435, 25%);
+            color: #ffff;
+        }
+    }
+
+    .navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
+        background-color: lighten(#002435, 35%);
+        color: #F3FFFE;	
+    }
+
+}
